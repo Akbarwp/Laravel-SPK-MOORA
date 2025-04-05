@@ -1,0 +1,97 @@
+/* table head */
+table.dataTable thead th {
+    text-align: center;
+}
+table.dataTable th.dt-type-numeric {
+    text-align: center;
+}
+
+
+/* text entries per page */
+.dt-length label {
+    color: #665551;
+}
+html.dark .dt-length label {
+    color: #77547C;
+}
+
+/* select page number */
+.dt-length select {
+    color: #665551;
+    width: 64px;
+    margin-right: 8px;
+}
+html.dark .dt-length select {
+    color: #77547C;
+}
+
+/* select container */
+html.dark .dt-container .dt-length select {
+    background-color: transparent;
+    border: 1px solid #77547C;
+}
+
+/* select option */
+html.dark .dt-container .dt-length option {
+    color: #665551;
+    background-color: white;
+}
+
+/* text search */
+.dt-search label {
+    color: #665551;
+}
+html.dark .dt-search label {
+    color: #77547C;
+}
+
+/* search input container */
+html.dark .dt-container .dt-search input {
+    background-color: white;
+    border: 1px solid #77547C;
+    margin-left: 8px;
+    color: #665551;
+}
+
+/* text pagination showing number */
+div.dt-container .dt-info {
+    color: #665551;
+}
+html.dark div.dt-container .dt-info {
+    color: #77547C;
+}
+
+/* button next previous number */
+div.dt-container .dt-paging .dt-paging-button.disabled,
+div.dt-container .dt-paging .dt-paging-button {
+    color: #665551 !important;
+}
+div.dt-container .dt-paging .dt-paging-button.disabled:hover,
+div.dt-container .dt-paging .dt-paging-button.disabled:active,
+div.dt-container .dt-paging .dt-paging-button.current:hover,
+html.dark .dt-container .dt-paging .dt-paging-button.disabled,
+html.dark .dt-container .dt-paging .dt-paging-button.disabled:hover,
+html.dark .dt-container .dt-paging .dt-paging-button.disabled:active,
+html.dark div.dt-container .dt-paging .dt-paging-button {
+    color: #77547C !important;
+}
+
+/* button background */
+div.dt-container .dt-paging .dt-paging-button:hover {
+    background: #D8CAA7 !important;
+    border: 1px solid transparent !important;
+}
+
+/* responsive title detail */
+table.dataTable > tbody > tr.child span.dtr-title {
+    background: rgb(59 130 246) !important;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px 4px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
