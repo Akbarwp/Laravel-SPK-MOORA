@@ -2,6 +2,13 @@
 
 @section("js")
     <script>
+        let alternatif = [];
+        let nilaiPreferensi = [];
+        @foreach ($nilaiPreferensi as $item)
+            alternatif.push(' {{ $item->alternatif->alternatif }} ');
+            nilaiPreferensi.push(' {{ round($item->nilai, 3) }} ');
+        @endforeach
+
         let chart_perankingan = {
             chart: {
                 height: 300,
@@ -12,7 +19,7 @@
                 enabled: false
             },
             series: [{
-                data: [1,2,3,4,5]
+                data: nilaiPreferensi
             }, ],
             stroke: {
                 curve: 'smooth',
@@ -23,7 +30,7 @@
             },
             colors: ["#944535"],
             xaxis: {
-                categories: ["alternatif1", "alternatif2", "alternatif3", "alternatif4", "alternatif5"],
+                categories: alternatif,
                 axisTicks: {
                     show: true
                 },
@@ -96,7 +103,7 @@
                             <div class="w-2/3 max-w-full flex-none px-3">
                                 <div>
                                     <p class="mb-0 font-sans text-sm font-semibold uppercase leading-normal dark:text-peach-yellow">Kriteria</p>
-                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">4</h5>
+                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">{{ $kriteria }}</h5>
                                 </div>
                             </div>
                             <div class="basis-1/3 px-3 text-right">
@@ -117,7 +124,7 @@
                             <div class="w-2/3 max-w-full flex-none px-3">
                                 <div>
                                     <p class="mb-0 font-sans text-sm font-semibold uppercase leading-normal dark:text-peach-yellow">Sub Kriteria</p>
-                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">16</h5>
+                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">{{ $subKriteria }}</h5>
                                 </div>
                             </div>
                             <div class="basis-1/3 px-3 text-right">
@@ -138,7 +145,7 @@
                             <div class="w-2/3 max-w-full flex-none px-3">
                                 <div>
                                     <p class="mb-0 font-sans text-sm font-semibold uppercase leading-normal dark:text-peach-yellow">Alternatif</p>
-                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">8</h5>
+                                    <h5 class="mb-2 font-bold text-el-salva dark:text-white">{{ $alternatif }}</h5>
                                 </div>
                             </div>
                             <div class="basis-1/3 px-3 text-right">

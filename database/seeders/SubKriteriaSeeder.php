@@ -21,12 +21,12 @@ class SubKriteriaSeeder extends Seeder
             if ($item->jenis_kriteria == 'cost') {
                 SubKriteria::factory()->create([
                     'sub_kriteria' => $subKriteriaPrice[0],
-                    'bobot' => 1,
+                    'bobot' => 5,
                     'kriteria_id' => $item->id,
                 ]);
                 SubKriteria::factory()->create([
                     'sub_kriteria' => $subKriteriaPrice[1],
-                    'bobot' => 2,
+                    'bobot' => 4,
                     'kriteria_id' => $item->id,
                 ]);
                 SubKriteria::factory()->create([
@@ -36,12 +36,12 @@ class SubKriteriaSeeder extends Seeder
                 ]);
                 SubKriteria::factory()->create([
                     'sub_kriteria' => $subKriteriaPrice[3],
-                    'bobot' => 4,
+                    'bobot' => 2,
                     'kriteria_id' => $item->id,
                 ]);
                 SubKriteria::factory()->create([
                     'sub_kriteria' => $subKriteriaPrice[4],
-                    'bobot' => 5,
+                    'bobot' => 1,
                     'kriteria_id' => $item->id,
                 ]);
             } else if ($item->jenis_kriteria == 'benefit') {

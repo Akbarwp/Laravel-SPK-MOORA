@@ -20,7 +20,7 @@ class PenilaianSeeder extends Seeder
         $subKriteria = [
             [
                 'alternatif_id' => 1,
-                'sub_kriteria_id' => [4, 9, 14, 17],
+                'sub_kriteria_id' => [4, 9, 14, 19],
             ],
             [
                 'alternatif_id' => 2,
@@ -33,6 +33,22 @@ class PenilaianSeeder extends Seeder
             [
                 'alternatif_id' => 4,
                 'sub_kriteria_id' => [5, 10, 15, 20],
+            ],
+            [
+                'alternatif_id' => 5,
+                'sub_kriteria_id' => [4, 9, 15, 19],
+            ],
+            [
+                'alternatif_id' => 6,
+                'sub_kriteria_id' => [5, 10, 14, 18],
+            ],
+            [
+                'alternatif_id' => 7,
+                'sub_kriteria_id' => [5, 9, 15, 20],
+            ],
+            [
+                'alternatif_id' => 8,
+                'sub_kriteria_id' => [4, 10, 13, 19],
             ],
         ];
         foreach ($alternatif as $alt => $item) {

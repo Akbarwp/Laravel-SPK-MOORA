@@ -26,19 +26,64 @@
                 <h6 class="ml-2 pl-6 text-xs font-bold uppercase leading-tight text-el-salva dark:text-peach-yellow opacity-60">Data Master</h6>
             </li>
 
-            {{-- <li class="mt-0.5 w-full">
-                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("dashboard") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("dashboard") }}">
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("kriteria") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("kriteria") }}">
                     <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
-                        <i class="ri-tv-2-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                        <i class="ri-puzzle-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
                     </div>
-                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Dashboard</span>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Kriteria</span>
                 </a>
-            </li> --}}
+            </li>
+
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("sub-kriteria") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("sub-kriteria") }}">
+                    <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <i class="ri-puzzle-2-fill relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                    </div>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Sub Kriteria</span>
+                </a>
+            </li>
+
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("alternatif") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("alternatif") }}">
+                    <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <i class="ri-survey-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                    </div>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Alternatif</span>
+                </a>
+            </li>
             {{-- Akhir Data Master --}}
 
             {{-- Awal MOORA --}}
             <li class="mt-4 w-full">
                 <h6 class="ml-2 pl-6 text-xs font-bold uppercase leading-tight text-el-salva dark:text-peach-yellow opacity-60">MOORA</h6>
+            </li>
+
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("penilaian") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("penilaian") }}">
+                    <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <i class="ri-arrow-right-down-long-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                    </div>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Penilaian</span>
+                </a>
+            </li>
+
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("perhitungan") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("perhitungan") }}">
+                    <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <i class="ri-gradienter-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                    </div>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Perhitungan</span>
+                </a>
+            </li>
+
+            <li class="mt-0.5 w-full">
+                <a class="py-2.7 ease-nav-brand {{ Request::routeIs("hasil-akhir") ? "rounded-lg font text-reno-sand dark:text-white bg-el-salva/10 dark:bg-peach-yellow/30" : "dark:text-white" }} mx-2 my-0 flex items-center whitespace-nowrap px-4 text-sm transition-colors hover:rounded-lg hover:bg-el-salva/10 dark:hover:bg-peach-yellow/30" href="{{ route("hasil-akhir") }}">
+                    <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                        <i class="ri-service-bell-line relative top-0 text-lg leading-normal text-reno-sand dark:text-white"></i>
+                    </div>
+                    <span class="ease pointer-events-none ml-1 opacity-100 duration-300">Hasil Akhir</span>
+                </a>
             </li>
             {{-- Akhir MOORA --}}
 

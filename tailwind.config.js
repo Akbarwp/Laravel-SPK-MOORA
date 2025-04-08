@@ -23,16 +23,12 @@ export default {
                 'timberwolf': '#DAD8D2',
                 'el-salva': '#944535',
                 'peach-yellow': '#FAD6A6',
-
-                'affair': '#77547C',
-                'pale-pink': '#F6D7E4',
-                'zambezi': '#665551',
-                'spanish-white': '#BDAC9C',
             },
         },
     },
 
     plugins: [
         forms,
+        require('daisyui'),
     ],
 };

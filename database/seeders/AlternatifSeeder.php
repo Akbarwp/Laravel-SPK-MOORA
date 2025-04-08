@@ -25,5 +25,17 @@ class AlternatifSeeder extends Seeder
         Alternatif::factory()->create([
             'kode' => 'A00004',
         ]);
+        Alternatif::factory()->create([
+            'kode' => 'A00005',
+        ]);
+        Alternatif::factory()->create([
+            'kode' => 'A00006',
+        ]);
+        Alternatif::factory()->create([
+            'kode' => 'A00007',
+        ]);
+        Alternatif::factory()->create([
+            'kode' => 'A00008',
+        ]);
     }
 }
