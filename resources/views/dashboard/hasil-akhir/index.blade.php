@@ -25,10 +25,10 @@
                 <div class="border-b-solid mb-0 flex items-center justify-between rounded-t-2xl border-b-0 border-b-transparent p-6 pb-3">
                     <h6 class="font-bold text-reno-sand dark:text-el-salva">Tabel {{ $title }}</h6>
                     <div class="w-1/2 max-w-full flex-none px-3 text-right">
-                        {{-- <a href="{{ route('pdf.hasilAkhir') }}" target="_blank" class="mb-0 inline-block rounded-lg border border-solid border-error bg-transparent px-4 py-1 text-center align-middle text-sm font-bold leading-normal tracking-tight text-error shadow-none transition-all ease-in hover:-translate-y-px hover:opacity-75 active:opacity-90 md:px-8 md:py-2">
+                        <a href="{{ route('pdf.hasilAkhir') }}" target="_blank" class="mb-0 inline-block rounded-lg border border-solid border-error bg-transparent px-4 py-1 text-center align-middle text-sm font-bold leading-normal tracking-tight text-error shadow-none transition-all ease-in hover:-translate-y-px hover:opacity-75 active:opacity-90 md:px-8 md:py-2">
                             <i class="ri-file-pdf-2-line"></i>
                             Cetak PDF
-                        </a> --}}
+                        </a>
                     </div>
                 </div>
                 <div class="flex-auto px-0 pb-2 pt-0">

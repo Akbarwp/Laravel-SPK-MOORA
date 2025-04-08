@@ -4,6 +4,7 @@ use App\Http\Controllers\AlternatifController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KriteriaController;
 use App\Http\Controllers\MOORAController;
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\PenilaianController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SubKriteriaController;
@@ -73,7 +74,7 @@ Route::middleware('auth')->group(function () {
     ], function() {
         Route::get('/perhitungan', [MOORAController::class, 'indexPerhitungan'])->name('perhitungan');
         Route::post('/perhitungan', [MOORAController::class, 'perhitunganMetode'])->name('perhitungan.moora');
-        // Route::get('/pdf-hasil-akhir', [PDFController::class, 'pdf_hasil'])->name('pdf.hasilAkhir');
+        Route::get('/pdf-hasil-akhir', [PDFController::class, 'pdf_hasil'])->name('pdf.hasilAkhir');
     });
 });
 
