@@ -19,10 +19,16 @@ export default {
                 spaceGrotesk: ['Space Grotesk'],
             },
             colors: {
-                'reno-sand': '#BB7334',
-                'timberwolf': '#DAD8D2',
-                'el-salva': '#944535',
-                'peach-yellow': '#FAD6A6',
+                'background-cover': '#BB7334',
+                'background-cover-dark': '#944535',
+
+                'background': '#FFFFFF',
+                'background-dark': '#FAD6A6',
+
+                'primary-color': '#BB7334',
+                'secondary-color': '#DAD8D2',
+                'primary-color-dark': '#944535',
+                'secondary-color-dark': '#FAD6A6',
             },
         },
     },

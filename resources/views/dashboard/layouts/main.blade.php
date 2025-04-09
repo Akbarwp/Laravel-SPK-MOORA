@@ -23,9 +23,9 @@
     </script>
 </head>
 
-<body class="leading-default m-0 h-full bg-white font-plusJakartaSans text-base font-normal text-reno-sand antialiased dark:bg-peach-yellow dark:text-el-salva">
-    <div class="min-h-75 bg-y-50 min-h-75 absolute top-0 w-full bg-reno-sand bg-[url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg')]">
-        <span class="absolute left-0 top-0 h-full w-full bg-reno-sand opacity-60 dark:bg-el-salva"></span>
+<body class="leading-default m-0 h-full bg-background font-plusJakartaSans text-base font-normal text-primary-color antialiased dark:bg-background-dark dark:text-primary-color-dark">
+    <div class="min-h-75 bg-y-50 min-h-75 absolute top-0 w-full bg-background-cover bg-[url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg')]">
+        <span class="absolute left-0 top-0 h-full w-full bg-background-cover opacity-60 dark:bg-background-cover-dark"></span>
     </div>
 
     @include("dashboard.layouts.sidebar")
@@ -33,7 +33,7 @@
     <main class="xl:ml-68 relative h-full max-h-screen rounded-xl transition-all duration-200 ease-in-out">
         @include("dashboard.layouts.navbar")
 
-        <div class="mx-auto w-full bg-white px-6 py-6 dark:bg-peach-yellow dark:text-el-salva">
+        <div class="mx-auto w-full bg-background px-6 py-6 dark:bg-background-dark dark:text-primary-color-dark">
             @yield("container")
             @include("dashboard.layouts.footer")
         </div>
