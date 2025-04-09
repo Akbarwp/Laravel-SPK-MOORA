@@ -25,6 +25,11 @@ export default {
                 'background': '#FFFFFF',
                 'background-dark': '#FAD6A6',
 
+                'sidebar-background': '#DAD8D2',
+                'sidebar-primary': '#BB7334',
+                'sidebar-background-dark': '#944535',
+                'sidebar-primary-dark': '#FFFFFF',
+
                 'primary-color': '#BB7334',
                 'secondary-color': '#DAD8D2',
                 'primary-color-dark': '#944535',

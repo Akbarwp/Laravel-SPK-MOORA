@@ -16,6 +16,7 @@ Laravel SPK MOORA is a website designed to provide a decision support system usi
 
 - Main features available in this application:
   - Implementation MOORA method
+  - Import data --> example [Kriteria](https://github.com/user-attachments/files/19659205/Import.Kriteria.xlsx), [Sub kriteria](https://github.com/user-attachments/files/19659207/Import.Sub.Kriteria.xlsx), [Alternatif](https://github.com/user-attachments/files/19659204/Import.Alternatif.xlsx), [Penilaian](https://github.com/user-attachments/files/19659206/Import.Penilaian.xlsx)
 
 ## Installation
 
